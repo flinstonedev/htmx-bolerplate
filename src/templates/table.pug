@@ -1,0 +1,8 @@
+extends main.pug
+
+block content
+  h1= title
+  button(hx-get="/new-content") click for http call
+  - var pets = ['cat', 'dog']
+  each petName in pets
+    include pet.pug

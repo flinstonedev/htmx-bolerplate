@@ -1,0 +1,28 @@
+{
+  "name": "htmx-boilerplate",
+  "version": "1.0.50",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "concurrently \"bun run --hot src/index.ts\" \"bun run css\"",
+    "css": "unocss 'src/**/*.pug' --out-file=public/styles/uno.css"
+  },
+  "dependencies": {
+    "@elysiajs/html": "^0.7.0",
+    "@elysiajs/static": "^0.7.1",
+    "@types/pug": "^2.0.7",
+    "@unocss/cli": "^0.56.4",
+    "@unocss/extractor-pug": "^0.56.4",
+    "@unocss/preset-attributify": "^0.56.4",
+    "@unocss/preset-uno": "^0.56.4",
+    "@unocss/preset-web-fonts": "^0.56.4",
+    "@unocss/transformer-variant-group": "^0.56.4",
+    "concurrently": "^8.2.1",
+    "elysia": "latest",
+    "pug": "^3.0.2",
+    "unocss": "^0.56.4"
+  },
+  "devDependencies": {
+    "bun-types": "latest"
+  },
+  "module": "src/index.js"
+}
